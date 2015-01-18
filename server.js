@@ -9,6 +9,9 @@ var express = require('express')
   , input
   , system = {}
 
+ , SegfaultHandler = require('segfault-handler');
+
+SegfaultHandler.registerHandler();
 
 // Get Midi Ports Info -----------------------------------
   function getPorts(midiInterface){

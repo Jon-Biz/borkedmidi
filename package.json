@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "4.x",
     "midi": "^0.9.0",
+    "segfault-handler": "^0.2.4",
     "socket.io": "^1.2.1"
   }
 }
