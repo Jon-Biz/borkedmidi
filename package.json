@@ -1,0 +1,11 @@
+{
+  "name": "midibiz",
+  "description": "realtime midi processing and routing",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "midi": "^0.9.0",
+    "socket.io": "^1.2.1"
+  }
+}

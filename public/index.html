@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+      var socket = window.io();
+
+      socket.on('serverinfo', function(msg){
+        console.log(msg)
+        socket.emit('clientinfo',{'client':'ok'})
+      })
+
+      socket.on('midimsg', function(msg){
+        console.log('midi:',msg)
+      })
+
+      socket.on('serverheartbeat', function(msg){
+        console.log('serverbeat:',msg)
+      })
+
+      setInterval(function () {
+       console.log('emiting')
+        socket.emit('clientheartbeat',{'arg':'beep'})
+      },5000)
+
+    </script>
+
+  </body>
+</html>
