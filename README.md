@@ -1,8 +1,7 @@
-#
+# Borked MIDI/SocketIO interactions
 This repos is intended to demostrate the crashes I am experiencing when running socket.io alongside the npm midi module.
 
-##
-To reproduce:
+## Setup
 
 * Clone the repo
 * `npm i`
@@ -11,7 +10,7 @@ To reproduce:
 * navigate your browser to `localhost:3312`
 * bang on the midi keyboard for a while
 
-Bus Error 10 and Segfault 11 errors itermittently
+Bus Error 10 and Segfault 11 errors occur intermittently:
 * After a few dozen to a few minutes worth of midi notes
 * When the browser is refreshed
 
