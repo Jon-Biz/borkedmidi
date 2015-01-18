@@ -4,10 +4,10 @@ This repos is intended to demostrate the crashes I am experiencing when running 
 ## Setup
 
 * Clone the repo
-* `npm i`
+* install the dependencies: `npm i`
 * plug in a midi device
   (this file will attempt to connect to device on port 0. If you need to point it to a different device, edit line 36 in `server.js`)
-* `node server.js`
+* run the server: `node server.js`
 * navigate your browser to `localhost:3312`
 * bang on the midi keyboard for a while
 
